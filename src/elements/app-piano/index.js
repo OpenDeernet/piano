@@ -549,33 +549,7 @@ class AppPiano extends WeElement {
         break;
     }
 
-    switch (subKey) {
-      case 0:
-        key = 4;
-        break;
-
-      case 1:
-        key = 3;
-        break;
-
-      case 2:
-        key = 2;
-        break;
-    }
-
-    switch (addKey) {
-      case 0:
-        key = 4;
-        break;
-
-      case 1:
-        key = 5;
-        break;
-
-      case 2:
-        key = 6;
-        break;
-    }
+    key = 4 - subKey + addKey;
 
     switch (pointKey) {
       case 0:
